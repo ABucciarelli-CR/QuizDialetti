@@ -414,7 +414,7 @@ GameObject:
   - component: {fileID: 223378122362307728}
   - component: {fileID: 114977387229608410}
   - component: {fileID: 114838890913296550}
-  - component: {fileID: 114226682902605838}
+  - component: {fileID: 114674106823403144}
   m_Layer: 5
   m_Name: Menus
   m_TagString: Untagged
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenSublevels
         m_Mode: 3
         m_Arguments:
@@ -872,7 +872,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenQuestionsAndAnswers
         m_Mode: 3
         m_Arguments:
@@ -957,7 +957,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenQuestionsAndAnswers
         m_Mode: 3
         m_Arguments:
@@ -970,24 +970,6 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!114 &114226682902605838
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1747555873092604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b5bd3566d8bd6a5459f2e959c7d2442e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  languages: {fileID: 11400000, guid: ff27218c49c602446966e4677e5a9eeb, type: 2}
-  levels: {fileID: 1871086513913690}
-  subLevels: {fileID: 1510578448844326}
-  questionsAndAnswers: {fileID: 1021298598128860}
-  results: {fileID: 1649670031606222}
-  languageNumber: 0
-  questionNumber: 0
 --- !u!114 &114237018961260590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1084,7 +1066,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: CheckResult
         m_Mode: 3
         m_Arguments:
@@ -1176,7 +1158,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: CheckResult
         m_Mode: 3
         m_Arguments:
@@ -1268,7 +1250,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenSublevels
         m_Mode: 3
         m_Arguments:
@@ -1401,7 +1383,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenSublevels
         m_Mode: 3
         m_Arguments:
@@ -1670,6 +1652,24 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114674106823403144
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747555873092604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5bd3566d8bd6a5459f2e959c7d2442e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  languages: {fileID: 11400000, guid: c4a48b16ea413064d8479d3625212a81, type: 2}
+  levels: {fileID: 1871086513913690}
+  subLevels: {fileID: 1510578448844326}
+  questionsAndAnswers: {fileID: 1021298598128860}
+  results: {fileID: 1649670031606222}
+  languageNumber: 0
+  questionNumber: 0
 --- !u!114 &114674817917792520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1798,7 +1798,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: CheckResult
         m_Mode: 3
         m_Arguments:
@@ -2062,7 +2062,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 114226682902605838}
+      - m_Target: {fileID: 0}
         m_MethodName: OpenQuestionsAndAnswers
         m_Mode: 3
         m_Arguments:

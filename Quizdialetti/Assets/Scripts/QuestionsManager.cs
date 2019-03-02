@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class QuestionsManager : MonoBehaviour
 {
 
-    public Languages languages;
+    public LanguageCollection languages;
     public GameObject levels;
     public GameObject subLevels;
     public GameObject questionsAndAnswers;

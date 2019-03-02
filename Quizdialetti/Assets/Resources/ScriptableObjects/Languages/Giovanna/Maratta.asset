@@ -8,12 +8,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: Gay
-  m_EditorClassIdentifier: Assembly-CSharp::SingleQuestion
-  question: rip 2
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Maratta
+  m_EditorClassIdentifier: 
+  question: Prima
   answers:
-  - 1
-  - 2
-  - 3
+  - terza
+  - pima
+  - seconda
   rightAnswer: 2
