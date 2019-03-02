@@ -7,6 +7,8 @@ public class QuestionsManager : MonoBehaviour
 {
 
     public LanguageCollection languages;
+    public GameObject homeButton;
+    public GameObject home;
     public GameObject levels;
     public GameObject subLevels;
     public GameObject questionsAndAnswers;
@@ -16,17 +18,26 @@ public class QuestionsManager : MonoBehaviour
 
     private void Start()
     {
-        levels.SetActive(false);
-        subLevels.SetActive(false);
-        questionsAndAnswers.SetActive(false);
-        results.SetActive(false);
-        OpenLevels();
+        GoHome();
+    }
+
+    private void Update() 
+    {
+        if (home.activeInHierarchy) 
+        {
+            homeButton.SetActive(false);
+        }
+        else 
+        {
+            homeButton.SetActive(true);
+        }
     }
 
     public void OpenLevels()
     {
         int i = 0;
         //chi chiama va false
+        home.SetActive(false);
         levels.SetActive(true);
         
         foreach (QuestionCollection ansAndQuest in languages.languageQuestionCollection)
@@ -106,6 +117,15 @@ public class QuestionsManager : MonoBehaviour
             results.transform.GetChild(1).gameObject.SetActive(true);
             StartCoroutine(WaitToNextQuestion(false));
         }
+    }
+
+    public void GoHome() 
+    {
+        levels.SetActive(false);
+        subLevels.SetActive(false);
+        questionsAndAnswers.SetActive(false);
+        results.SetActive(false);
+        home.SetActive(true);
     }
 
     IEnumerator WaitToNextQuestion(bool success)
