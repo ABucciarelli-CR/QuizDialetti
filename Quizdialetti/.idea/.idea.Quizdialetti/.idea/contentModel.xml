@@ -9,7 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="QuestionsManager.cs" t="Include" />
           <e p="SO" t="Include">
+            <e p="BackGroundCollection.cs" t="Include" />
             <e p="LanguageCollection.cs" t="Include" />
+            <e p="LevelCollection.cs" t="Include" />
             <e p="QuestionCollection.cs" t="Include" />
             <e p="SingleQuestion.cs" t="Include" />
           </e>

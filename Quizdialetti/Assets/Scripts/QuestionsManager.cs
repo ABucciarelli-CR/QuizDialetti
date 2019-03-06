@@ -13,6 +13,8 @@ public class QuestionsManager : MonoBehaviour
     public GameObject subLevels;
     public GameObject questionsAndAnswers;
     public GameObject results;
+    public GameObject backGround;
+    public GameObject audioManager;
     [HideInInspector] public int languageNumber;
    /* [HideInInspector] */public int questionNumber;
 
@@ -32,30 +34,42 @@ public class QuestionsManager : MonoBehaviour
             homeButton.SetActive(true);
         }
     }
+    
+    //Home
+    public void GoHome() 
+    {
+        levels.SetActive(false);
+        subLevels.SetActive(false);
+        questionsAndAnswers.SetActive(false);
+        results.SetActive(false);
+        home.SetActive(true);
+    }
 
+    //Language Selection
     public void OpenLevels()
     {
         int i = 0;
-        //chi chiama va false
+        
         home.SetActive(false);
         levels.SetActive(true);
         
-        foreach (QuestionCollection ansAndQuest in languages.languageQuestionCollection)
+        foreach (LevelCollection lvl in languages.languageLevels)
         {
-            levels.transform.GetChild(i).gameObject.GetComponentInChildren<Text>().text = ansAndQuest.name;
+            levels.transform.GetChild(i).gameObject.GetComponentInChildren<Text>().text = lvl.name;
             i++;
         }
     }
     
+    //LevelSelection
     public void OpenSublevels(int x)
     {
         languageNumber = x;
         levels.SetActive(false);
         subLevels.SetActive(true);
         
-        for (int j = 0; j < languages.languageQuestionCollection[languageNumber].unlocked.Count; j++)
+        for (int j = 0; j < languages.languageLevels[languageNumber].unlocked.Count; j++)
         {
-            if (!languages.languageQuestionCollection[languageNumber].unlocked[j])
+            if (!languages.languageLevels[languageNumber].unlocked[j])
             {
                 subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().color = Color.red;
                 subLevels.transform.GetChild(j).gameObject.GetComponent<Button>().enabled = false;
@@ -67,7 +81,13 @@ public class QuestionsManager : MonoBehaviour
             }
         }
     }
+
+    public void LevelSelection() 
+    {
+        
+    }
     
+    //single question
     public void OpenQuestionsAndAnswers(int i)
     {
         questionNumber = i;
@@ -77,18 +97,29 @@ public class QuestionsManager : MonoBehaviour
         AnswerQuestionSeries(); 
     }
 
+    //singleQuestion
     private void AnswerQuestionSeries()
     {
-        questionsAndAnswers.transform.GetChild(0).gameObject.GetComponentInChildren<Text>().text = languages.languageQuestionCollection[languageNumber].questions[questionNumber].question;
-        questionsAndAnswers.transform.GetChild(1).gameObject.GetComponentInChildren<Text>().text = languages.languageQuestionCollection[languageNumber].questions[questionNumber].answers[0];
-        questionsAndAnswers.transform.GetChild(2).gameObject.GetComponentInChildren<Text>().text = languages.languageQuestionCollection[languageNumber].questions[questionNumber].answers[1];
-        questionsAndAnswers.transform.GetChild(3).gameObject.GetComponentInChildren<Text>().text = languages.languageQuestionCollection[languageNumber].questions[questionNumber].answers[2];
+        questionsAndAnswers.transform.GetChild(0).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].question;
+        questionsAndAnswers.transform.GetChild(1).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[0];
+        questionsAndAnswers.transform.GetChild(2).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[1];
+        questionsAndAnswers.transform.GetChild(3).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[2];
+        if (languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers.Count == 4) 
+        {
+            questionsAndAnswers.transform.GetChild(4).gameObject.SetActive(true);
+            questionsAndAnswers.transform.GetChild(4).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[3];    
+        }
+        else
+        {
+            questionsAndAnswers.transform.GetChild(4).gameObject.SetActive(false);
+        }
+        
     }
     
     private void NextQuestion()
     {
         questionNumber++;
-        if (questionNumber >= languages.languageQuestionCollection[languageNumber].questions.Count)
+        if (questionNumber >= languages.languageLevels[languageNumber].questionCollection[0].questions.Count)
         {
             OpenLevels();
         }
@@ -105,7 +136,7 @@ public class QuestionsManager : MonoBehaviour
         questionsAndAnswers.SetActive(false);
         results.SetActive(true);
         
-        if (languages.languageQuestionCollection[languageNumber].questions[questionNumber].rightAnswer == ans+1)
+        if (languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].rightAnswer == ans+1)
         {
             results.transform.GetChild(0).gameObject.SetActive(true);
             results.transform.GetChild(1).gameObject.SetActive(false);
@@ -119,23 +150,14 @@ public class QuestionsManager : MonoBehaviour
         }
     }
 
-    public void GoHome() 
-    {
-        levels.SetActive(false);
-        subLevels.SetActive(false);
-        questionsAndAnswers.SetActive(false);
-        results.SetActive(false);
-        home.SetActive(true);
-    }
-
     IEnumerator WaitToNextQuestion(bool success)
     {
         yield return new WaitForSeconds(3);
         if (success)
         {
-            if (questionNumber+1 <= languages.languageQuestionCollection[languageNumber].unlocked.Count-1)
+            if (questionNumber+1 <= languages.languageLevels[languageNumber].unlocked.Count-1)
             {
-                languages.languageQuestionCollection[languageNumber].unlocked[questionNumber+1] = true;
+                languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
             }
             
             NextQuestion();

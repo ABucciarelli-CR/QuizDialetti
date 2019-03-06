@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Language")]
+[CreateAssetMenu(fileName = "Questions")]
 public class QuestionCollection : ScriptableObject 
 {
 	public List<SingleQuestion> questions;
 	
-	public List<bool> unlocked;
 }

@@ -11,7 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de5353385dd5c1d4bb00544cb9ffc99a, type: 3}
   m_Name: LanguageCollection
   m_EditorClassIdentifier: 
-  languageQuestionCollection:
-  - {fileID: 11400000, guid: e038e914767aff742a677b184fd39501, type: 2}
-  - {fileID: 11400000, guid: 1767f89ee913f054bb09c5fa123bc11a, type: 2}
-  - {fileID: 11400000, guid: 1767f89ee913f054bb09c5fa123bc11a, type: 2}
+  languageLevels:
+  - {fileID: 11400000, guid: 1e05204b57809a940973dca2074681ca, type: 2}

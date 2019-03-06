@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
-  m_Name: Maritta
+  m_Name: Single Question & Answers 1
   m_EditorClassIdentifier: 
-  question: la prima
+  question: 1
   answers:
-  - terza
-  - seconda
-  - prima
+  - 1
+  - 2
+  - 3
   rightAnswer: 1
