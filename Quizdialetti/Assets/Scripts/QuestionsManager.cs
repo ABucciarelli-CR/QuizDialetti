@@ -11,6 +11,7 @@ public class QuestionsManager : MonoBehaviour
     public AudioCollection audioCollection;
     public GameObject homeButton;
     public GameObject home;
+    public GameObject backButton;
     public GameObject levels;
     public GameObject subLevels;
     public GameObject questionsAndAnswers;
@@ -18,12 +19,13 @@ public class QuestionsManager : MonoBehaviour
     public GameObject backGround;
     public GameObject audioManager;
     [HideInInspector] public int languageNumber;
-    private int questionPointer =0;
+    private int questionPointer = 0;
    /* [HideInInspector] */public int questionNumber;
 
     private void Start()
     {
-        audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.bgAudio;
+        audioManager.transform.GetChild(0).gameObject.GetComponent<AudioSource>().clip = audioCollection.bgAudio;
+        audioManager.transform.GetChild(0).gameObject.GetComponent<AudioSource>().Play();
         GoHome();
     }
 
@@ -32,10 +34,20 @@ public class QuestionsManager : MonoBehaviour
         if (home.activeInHierarchy) 
         {
             homeButton.SetActive(false);
+            backButton.SetActive(false);
         }
         else 
         {
-            homeButton.SetActive(true);
+            if (!results.activeInHierarchy) 
+            {
+                backButton.SetActive(true);
+                homeButton.SetActive(true);
+            }
+            else
+            {
+                homeButton.SetActive(false);
+                backButton.SetActive(false);
+            }
         }
     }
     
@@ -48,6 +60,24 @@ public class QuestionsManager : MonoBehaviour
         questionsAndAnswers.SetActive(false);
         results.SetActive(false);
         home.SetActive(true);
+    }
+
+    public void GoBack() 
+    {
+        if (levels.activeInHierarchy) 
+        {
+            GoHome();
+        }
+        else if (subLevels.activeInHierarchy) 
+        {
+            subLevels.SetActive(false);
+            OpenLevels();
+        }
+        else if (questionsAndAnswers.activeInHierarchy) 
+        {
+            questionsAndAnswers.SetActive(false);
+            OpenSublevels(languageNumber);
+        }
     }
 
     //Language Selection
@@ -142,16 +172,16 @@ public class QuestionsManager : MonoBehaviour
         
         if (languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].rightAnswer == ans+1)
         {
-            audioManager.transform.GetChild(2).GetComponent<AudioSource>().clip = audioCollection.winAudio;
-            audioManager.transform.GetChild(2).GetComponent<AudioSource>().Play();
+            audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.winAudio;
+            audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
             results.transform.GetChild(0).gameObject.SetActive(true);
             results.transform.GetChild(1).gameObject.SetActive(false);
             StartCoroutine(WaitToNextQuestion(true));
         }
         else
         {    
-            audioManager.transform.GetChild(2).GetComponent<AudioSource>().clip = audioCollection.loseAudio;
-            audioManager.transform.GetChild(2).GetComponent<AudioSource>().Play();
+            audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.loseAudio;
+            audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
             results.transform.GetChild(0).gameObject.SetActive(false);
             results.transform.GetChild(1).gameObject.SetActive(true);
             StartCoroutine(WaitToNextQuestion(false));
@@ -167,7 +197,6 @@ public class QuestionsManager : MonoBehaviour
             {
                 //null
             }
-            
             NextQuestion();
         }
         else
@@ -176,6 +205,7 @@ public class QuestionsManager : MonoBehaviour
         }
         results.transform.GetChild(0).gameObject.SetActive(false);
         results.transform.GetChild(1).gameObject.SetActive(false);
+        results.SetActive(false);
     }
 
 }
