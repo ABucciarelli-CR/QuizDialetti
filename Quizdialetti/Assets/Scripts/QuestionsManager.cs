@@ -219,11 +219,17 @@ public class QuestionsManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         if (success)
         {
-            if (questionPointer+1 <= languages.languageLevels[languageNumber].unlocked.Count-1)
+            //controllo se hai finito le domande, nel caso vai alla selezione della lingua
+            if (questionNumber+1 >= languages.languageLevels[languageNumber].questionCollection.Count)
             {
-                //null
+                NextQuestion();
             }
-            NextQuestion();
+            else 
+            {
+                OpenSublevels(languageNumber);
+            }
+            
+            
         }
         else
         {

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   languageLevels:
   - {fileID: 11400000, guid: 1e05204b57809a940973dca2074681ca, type: 2}
+  - {fileID: 11400000, guid: 1e05204b57809a940973dca2074681ca, type: 2}
