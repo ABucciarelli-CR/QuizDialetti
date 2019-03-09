@@ -9,9 +9,11 @@ public class QuestionsManager : MonoBehaviour
     public LanguageCollection languages;
     public BackGroundCollection bgCollection;
     public AudioCollection audioCollection;
+    public Text levelText;
     public GameObject homeButton;
-    public GameObject home;
     public GameObject backButton;
+    public GameObject resetButton;
+    public GameObject home;
     public GameObject levels;
     public GameObject subLevels;
     public GameObject questionsAndAnswers;
@@ -49,6 +51,15 @@ public class QuestionsManager : MonoBehaviour
                 backButton.SetActive(false);
             }
         }
+
+        if (questionsAndAnswers.activeInHierarchy || results.activeInHierarchy) 
+        {
+            levelText.enabled = true;
+        }
+        else 
+        {
+            levelText.enabled = false;
+        }
     }
     
     //Home
@@ -59,6 +70,7 @@ public class QuestionsManager : MonoBehaviour
         subLevels.SetActive(false);
         questionsAndAnswers.SetActive(false);
         results.SetActive(false);
+        resetButton.SetActive(true);
         home.SetActive(true);
     }
 
@@ -87,6 +99,7 @@ public class QuestionsManager : MonoBehaviour
         int i = 0;
         
         home.SetActive(false);
+        resetButton.SetActive(false);
         levels.SetActive(true);
         
         foreach (LevelCollection lvl in languages.languageLevels)
@@ -131,8 +144,9 @@ public class QuestionsManager : MonoBehaviour
     }
 
     //singleQuestion
-    private void AnswerQuestionSeries()
+    private void AnswerQuestionSeries() 
     {
+        levelText.text = languages.languageLevels[languageNumber].name + " LV. " + (questionNumber + 1) + " - " + (questionPointer + 1);
         questionsAndAnswers.transform.GetChild(0).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].question;
         questionsAndAnswers.transform.GetChild(1).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers[0];
         questionsAndAnswers.transform.GetChild(2).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers[1];
@@ -185,6 +199,18 @@ public class QuestionsManager : MonoBehaviour
             results.transform.GetChild(0).gameObject.SetActive(false);
             results.transform.GetChild(1).gameObject.SetActive(true);
             StartCoroutine(WaitToNextQuestion(false));
+        }
+    }
+
+    public void GameReset() 
+    {
+        for (int i=0; i<languages.languageLevels.Count; i++)
+        {
+            for (int j = 1; j < languages.languageLevels[languageNumber].unlocked.Count; j++) 
+            {
+                languages.languageLevels[i].unlocked[j] = false;
+            }
+            
         }
     }
 
