@@ -7,6 +7,8 @@ public class QuestionsManager : MonoBehaviour
 {
 
     public LanguageCollection languages;
+    public BackGroundCollection bgCollection;
+    public AudioCollection audioCollection;
     public GameObject homeButton;
     public GameObject home;
     public GameObject levels;
@@ -16,10 +18,12 @@ public class QuestionsManager : MonoBehaviour
     public GameObject backGround;
     public GameObject audioManager;
     [HideInInspector] public int languageNumber;
+    private int questionPointer =0;
    /* [HideInInspector] */public int questionNumber;
 
     private void Start()
     {
+        audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.bgAudio;
         GoHome();
     }
 
@@ -36,8 +40,9 @@ public class QuestionsManager : MonoBehaviour
     }
     
     //Home
-    public void GoHome() 
+    public void GoHome()
     {
+        backGround.GetComponent<Image>().sprite = bgCollection.home;
         levels.SetActive(false);
         subLevels.SetActive(false);
         questionsAndAnswers.SetActive(false);
@@ -48,6 +53,7 @@ public class QuestionsManager : MonoBehaviour
     //Language Selection
     public void OpenLevels()
     {
+        backGround.GetComponent<Image>().sprite = bgCollection.languageSelection;
         int i = 0;
         
         home.SetActive(false);
@@ -63,6 +69,8 @@ public class QuestionsManager : MonoBehaviour
     //LevelSelection
     public void OpenSublevels(int x)
     {
+        backGround.GetComponent<Image>().sprite = languages.languageLevels[languageNumber].questionBG;
+        questionPointer = 0;
         languageNumber = x;
         levels.SetActive(false);
         subLevels.SetActive(true);
@@ -81,11 +89,6 @@ public class QuestionsManager : MonoBehaviour
             }
         }
     }
-
-    public void LevelSelection() 
-    {
-        
-    }
     
     //single question
     public void OpenQuestionsAndAnswers(int i)
@@ -100,14 +103,14 @@ public class QuestionsManager : MonoBehaviour
     //singleQuestion
     private void AnswerQuestionSeries()
     {
-        questionsAndAnswers.transform.GetChild(0).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].question;
-        questionsAndAnswers.transform.GetChild(1).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[0];
-        questionsAndAnswers.transform.GetChild(2).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[1];
-        questionsAndAnswers.transform.GetChild(3).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[2];
-        if (languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers.Count == 4) 
+        questionsAndAnswers.transform.GetChild(0).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].question;
+        questionsAndAnswers.transform.GetChild(1).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers[0];
+        questionsAndAnswers.transform.GetChild(2).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers[1];
+        questionsAndAnswers.transform.GetChild(3).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers[2];
+        if (languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers.Count == 4) 
         {
             questionsAndAnswers.transform.GetChild(4).gameObject.SetActive(true);
-            questionsAndAnswers.transform.GetChild(4).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].answers[3];    
+            questionsAndAnswers.transform.GetChild(4).gameObject.GetComponentInChildren<Text>().text = languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].answers[3];    
         }
         else
         {
@@ -118,9 +121,10 @@ public class QuestionsManager : MonoBehaviour
     
     private void NextQuestion()
     {
-        questionNumber++;
-        if (questionNumber >= languages.languageLevels[languageNumber].questionCollection[0].questions.Count)
+        questionPointer++;
+        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count)
         {
+            languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
             OpenLevels();
         }
         else
@@ -136,14 +140,18 @@ public class QuestionsManager : MonoBehaviour
         questionsAndAnswers.SetActive(false);
         results.SetActive(true);
         
-        if (languages.languageLevels[languageNumber].questionCollection[0].questions[questionNumber].rightAnswer == ans+1)
+        if (languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].rightAnswer == ans+1)
         {
+            audioManager.transform.GetChild(2).GetComponent<AudioSource>().clip = audioCollection.winAudio;
+            audioManager.transform.GetChild(2).GetComponent<AudioSource>().Play();
             results.transform.GetChild(0).gameObject.SetActive(true);
             results.transform.GetChild(1).gameObject.SetActive(false);
             StartCoroutine(WaitToNextQuestion(true));
         }
         else
         {    
+            audioManager.transform.GetChild(2).GetComponent<AudioSource>().clip = audioCollection.loseAudio;
+            audioManager.transform.GetChild(2).GetComponent<AudioSource>().Play();
             results.transform.GetChild(0).gameObject.SetActive(false);
             results.transform.GetChild(1).gameObject.SetActive(true);
             StartCoroutine(WaitToNextQuestion(false));
@@ -155,9 +163,9 @@ public class QuestionsManager : MonoBehaviour
         yield return new WaitForSeconds(3);
         if (success)
         {
-            if (questionNumber+1 <= languages.languageLevels[languageNumber].unlocked.Count-1)
+            if (questionPointer+1 <= languages.languageLevels[languageNumber].unlocked.Count-1)
             {
-                languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
+                //null
             }
             
             NextQuestion();

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -353,40 +353,6 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114674106823403144, guid: 422fa9dba5788c2479dd684efdb6bf50,
-        type: 2}
-      propertyPath: backGround
-      value: 
-      objectReference: {fileID: 1772484206}
-    - target: {fileID: 114674106823403144, guid: 422fa9dba5788c2479dd684efdb6bf50,
-        type: 2}
-      propertyPath: audioManager
-      value: 
-      objectReference: {fileID: 2087118307}
-    - target: {fileID: 1510578448844326, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
-      propertyPath: m_Name
-      value: LanguageLevels
-      objectReference: {fileID: 0}
-    - target: {fileID: 1871086513913690, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
-      propertyPath: m_Name
-      value: LanguageSelection
-      objectReference: {fileID: 0}
-    - target: {fileID: 1871086513913690, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510578448844326, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4823374572763326, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4754160213968868, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 422fa9dba5788c2479dd684efdb6bf50, type: 2}
   m_IsPrefabAsset: 0
@@ -452,13 +418,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1772484206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1248588758423588, guid: 422fa9dba5788c2479dd684efdb6bf50,
-    type: 2}
-  m_PrefabInternal: {fileID: 768622207}
---- !u!1 &2087118307 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1400403001261220, guid: 422fa9dba5788c2479dd684efdb6bf50,
-    type: 2}
-  m_PrefabInternal: {fileID: 768622207}
