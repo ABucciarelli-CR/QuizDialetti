@@ -12,7 +12,6 @@ public class QuestionsManager : MonoBehaviour
     public Text levelText;
     public GameObject homeButton;
     public GameObject backButton;
-    public GameObject resetButton;
     public GameObject home;
     public GameObject levels;
     public GameObject subLevels;
@@ -70,7 +69,6 @@ public class QuestionsManager : MonoBehaviour
         subLevels.SetActive(false);
         questionsAndAnswers.SetActive(false);
         results.SetActive(false);
-        resetButton.SetActive(true);
         home.SetActive(true);
     }
 
@@ -99,7 +97,6 @@ public class QuestionsManager : MonoBehaviour
         int i = 0;
         
         home.SetActive(false);
-        resetButton.SetActive(false);
         levels.SetActive(true);
         
         foreach (LevelCollection lvl in languages.languageLevels)
@@ -165,11 +162,17 @@ public class QuestionsManager : MonoBehaviour
     
     private void NextQuestion()
     {
+        //problema qua
         questionPointer++;
-        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count)
+        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber >= languages.languageLevels[languageNumber].questionCollection.Count)
         {
             languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
             OpenLevels();
+        }
+        else if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber < languages.languageLevels[languageNumber].questionCollection.Count)
+        {
+            languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
+            OpenSublevels(languageNumber);
         }
         else
         {
@@ -220,7 +223,7 @@ public class QuestionsManager : MonoBehaviour
         if (success)
         {
             //controllo se hai finito le domande, nel caso vai alla selezione della lingua
-            if (questionNumber+1 >= languages.languageLevels[languageNumber].questionCollection.Count)
+            if (questionNumber+1 <= languages.languageLevels[languageNumber].questionCollection.Count)
             {
                 NextQuestion();
             }
