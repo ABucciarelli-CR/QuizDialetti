@@ -164,9 +164,8 @@ public class QuestionsManager : MonoBehaviour
     {
         //problema qua
         questionPointer++;
-        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber >= languages.languageLevels[languageNumber].questionCollection.Count)
+        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber >= languages.languageLevels[languageNumber].questionCollection.Count-1)
         {
-            languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
             OpenLevels();
         }
         else if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber < languages.languageLevels[languageNumber].questionCollection.Count)
