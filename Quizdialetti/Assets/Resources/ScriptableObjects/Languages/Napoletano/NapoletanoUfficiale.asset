@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 82ad3e417c39ae246a6725531440f9ca, type: 3}
+  m_Name: NapoletanoUfficiale
+  m_EditorClassIdentifier: 
+  questionCollection:
+  - {fileID: 11400000, guid: bcd16bda1ad27a94e9499a536d847d90, type: 2}
+  - {fileID: 11400000, guid: bcd5650c09b3c724698f7b39b42ee8c0, type: 2}
+  - {fileID: 11400000, guid: f6fa25749178fc442bd24dc8cf7e15c2, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  unlocked: 010000000000000000
+  questionBG: {fileID: 21300000, guid: 94f4a4fb57455c74885a082b3127caee, type: 3}
