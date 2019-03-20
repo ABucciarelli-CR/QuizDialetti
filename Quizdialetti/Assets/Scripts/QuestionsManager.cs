@@ -176,6 +176,7 @@ public class QuestionsManager : MonoBehaviour
         }
         else if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber < languages.languageLevels[languageNumber].questionCollection.Count)
         {
+            gameObject.GetComponent<AdsManager>().StartSkippableAds();
             languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
             OpenSublevels(languageNumber);
         }
