@@ -9,11 +9,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
-  m_Name: NapLv3_02
+  m_Name: NapLv4_02
   m_EditorClassIdentifier: 
-  question: Come si traduce il verbo "Piangere"?
+  question: "Come si traduce letteralmente in italiano il modo di dire \u201CAdda
+    passa\u2019 \u2018a nuttata\u201D?"
   answers:
-  - "Chi\xE0ncir\xEC"
-  - Chiagnere
-  - "Pi\xE0nzer"
-  rightAnswer: 2
+  - Deve trascorrere la notte
+  - "Una notte \xE8 passata"
+  - Sta trascorrendo la notte
+  rightAnswer: 1

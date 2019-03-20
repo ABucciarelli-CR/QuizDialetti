@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: NapLv7_03
+  m_EditorClassIdentifier: 
+  question: "Come si traduce letteralmente in italiano il proverbio \u201CL\u2019amico
+    \xE8 comme a \u2018o \u2018mbrello: quanne chiove nun \u2018o truove maje\u201D?"
+  answers:
+  - "L\u2019amico quando piove \xE8 sempre senza ombrello"
+  - "L\u2019amico \xE8 come l\u2019ombrello, quando piove non lo trovi mai"
+  - "L\u2019amico \xE8 come un ombrello, quando piove non si apre mai"
+  - "L\u2019amico \xE8 uguale all\u2019ombrello, se piove non ce l\u2019hai"
+  rightAnswer: 2

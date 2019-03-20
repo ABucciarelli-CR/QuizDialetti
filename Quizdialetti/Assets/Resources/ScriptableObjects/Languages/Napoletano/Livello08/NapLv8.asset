@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54527882000bd674482e22af91e6dfde, type: 3}
+  m_Name: NapLv8
+  m_EditorClassIdentifier: 
+  questions:
+  - {fileID: 11400000, guid: a62049eaae8f30a43ba392501bf1d706, type: 2}
+  - {fileID: 11400000, guid: 0f0d0010ac2489f44a7ef8477b3fadfe, type: 2}
+  - {fileID: 11400000, guid: 0d91356b9df7ce84d950a31c3642ec7b, type: 2}

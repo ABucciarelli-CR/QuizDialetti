@@ -9,11 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
-  m_Name: NapLv3_02
+  m_Name: NapLv8_01
   m_EditorClassIdentifier: 
-  question: Come si traduce il verbo "Piangere"?
+  question: "Come si traduce letteralmente in italiano il proverbio \u201C\u2018O
+    sparagno nun \xE8 maje guadagno\u201D?"
   answers:
-  - "Chi\xE0ncir\xEC"
-  - Chiagnere
-  - "Pi\xE0nzer"
+  - "Risparmiare non \xE8 come guadagnare"
+  - "Il risparmio non \xE8 mai guadagno"
+  - Risparmiando si guadagna
+  - "Risparmiare \xE8 meglio che guadagnare"
   rightAnswer: 2

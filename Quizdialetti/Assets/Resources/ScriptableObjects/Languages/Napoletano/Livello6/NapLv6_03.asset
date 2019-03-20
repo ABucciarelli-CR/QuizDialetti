@@ -9,11 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
-  m_Name: NapLv3_02
+  m_Name: NapLv6_03
   m_EditorClassIdentifier: 
-  question: Come si traduce il verbo "Piangere"?
+  question: "Come si traduce letteralmente in italiano il modo di dire \u201CAdd\xF2
+    nun coglie \u2018o sole\u201D?"
   answers:
-  - "Chi\xE0ncir\xEC"
-  - Chiagnere
-  - "Pi\xE0nzer"
+  - Non riesco a scorgere il sole
+  - Dove non colpisce il sole
+  - Dove non si vede il sole
+  - Dove il sole non scotta
   rightAnswer: 2
