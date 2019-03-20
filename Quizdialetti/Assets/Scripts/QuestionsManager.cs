@@ -10,6 +10,8 @@ public class QuestionsManager : MonoBehaviour
     public BackGroundCollection bgCollection;
     public AudioCollection audioCollection;
     public Text levelText;
+    public Sprite unlocked;
+    public Sprite locked;
     public GameObject homeButton;
     public GameObject backButton;
     public GameObject home;
@@ -119,12 +121,16 @@ public class QuestionsManager : MonoBehaviour
         {
             if (!languages.languageLevels[languageNumber].unlocked[j])
             {
-                subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().color = Color.red;
+                //subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().color = Color.red;
+                subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().sprite = locked;
+                subLevels.transform.GetChild(j).transform.GetChild(0).gameObject.GetComponent<Text>().color = Color.clear;
                 subLevels.transform.GetChild(j).gameObject.GetComponent<Button>().enabled = false;
             }
             else
             {
-                subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().color = Color.white;
+                //subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().color = Color.white;
+                subLevels.transform.GetChild(j).gameObject.GetComponent<Image>().sprite = unlocked;
+                subLevels.transform.GetChild(j).transform.GetChild(0).gameObject.GetComponent<Text>().color = Color.white;
                 subLevels.transform.GetChild(j).gameObject.GetComponent<Button>().enabled = true;
             }
         }
