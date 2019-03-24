@@ -60,6 +60,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="AdsManager.cs" t="Include" />
+          <e p="ArchievementsUnlock.cs" t="Include" />
           <e p="PurchaseManager.cs" t="Include" />
           <e p="Purchaser.cs" t="Include" />
           <e p="QuestionsManager.cs" t="Include" />

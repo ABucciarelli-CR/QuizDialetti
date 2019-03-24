@@ -15,6 +15,7 @@ public class QuestionsManager : MonoBehaviour
     public GameObject homeButton;
     public GameObject backButton;
     public GameObject home;
+    public GameObject archievement;
     public GameObject levels;
     public GameObject subLevels;
     public GameObject questionsAndAnswers;
@@ -67,6 +68,7 @@ public class QuestionsManager : MonoBehaviour
     public void GoHome()
     {
         backGround.GetComponent<Image>().sprite = bgCollection.home;
+        archievement.SetActive(false);
         levels.SetActive(false);
         subLevels.SetActive(false);
         questionsAndAnswers.SetActive(false);
@@ -76,7 +78,7 @@ public class QuestionsManager : MonoBehaviour
 
     public void GoBack() 
     {
-        if (levels.activeInHierarchy) 
+        if (levels.activeInHierarchy || archievement.activeInHierarchy) 
         {
             GoHome();
         }
@@ -92,6 +94,13 @@ public class QuestionsManager : MonoBehaviour
         }
     }
 
+    public void OpenArchievements()
+    {
+        home.SetActive(false);
+        archievement.SetActive(true);
+
+    }
+
     //Language Selection
     public void OpenLevels()
     {
@@ -104,6 +113,7 @@ public class QuestionsManager : MonoBehaviour
         foreach (LevelCollection lvl in languages.languageLevels)
         {
             levels.transform.GetChild(i).gameObject.GetComponentInChildren<Text>().text = lvl.name;
+            levels.transform.GetChild(i).gameObject.GetComponent<Image>().sprite = lvl.buttonSprite;
             i++;
         }
     }

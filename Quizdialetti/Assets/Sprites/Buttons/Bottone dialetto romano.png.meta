@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 38be068caa57c924fb2cc08e83c751d1
+guid: 23b02a0bf9bdd44459ffded33cac6e6c
 TextureImporter:
   fileIDToRecycleName:
-    21300000: BottoneTemplate1_0
-    21300002: BottoneTemplate1_1
-    21300004: BottoneTemplate1_2
+    21300000: Bottone dialetto romano_0
+    21300002: Bottone dialetto romano_1
+    21300004: Bottone dialetto romano_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -98,13 +98,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BottoneTemplate1_0
+      name: Bottone dialetto romano_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 400
-        width: 800
-        height: 200
+        y: 1280
+        width: 3128
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -112,19 +112,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ac1cf046acc92d49860cc56545dcec3
+      spriteID: b0ac8163839bee2418e62e0908424294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottoneTemplate1_1
+      name: Bottone dialetto romano_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 125
-        width: 800
-        height: 304
+        y: 443
+        width: 3128
+        height: 990
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fa1e6d49234a2184091de2fc6b1fcfee
+      spriteID: d807bfc85008fc044af21799489ebee7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BottoneTemplate1_2
+      name: Bottone dialetto romano_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 800
-        height: 200
+        width: 3128
+        height: 640
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbee9a52d6a78a0438ca28853ccad2f4
+      spriteID: 758fba5699bfd8540bdfa7b4468218a3
       vertices: []
       indices: 
       edges: []
@@ -160,7 +160,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9c2290140f754d24c84635c4021846cc
+    spriteID: 11de9eadf2e57964189a9545a93079b8
     vertices: []
     indices: 
     edges: []

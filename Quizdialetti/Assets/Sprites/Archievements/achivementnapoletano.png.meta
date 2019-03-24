@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 38be068caa57c924fb2cc08e83c751d1
+guid: 001671cc001240144aa1eaf8fe9dd21d
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: BottoneTemplate1_0
-    21300002: BottoneTemplate1_1
-    21300004: BottoneTemplate1_2
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -43,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -96,71 +93,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: BottoneTemplate1_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 400
-        width: 800
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9ac1cf046acc92d49860cc56545dcec3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BottoneTemplate1_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 125
-        width: 800
-        height: 304
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fa1e6d49234a2184091de2fc6b1fcfee
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BottoneTemplate1_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 800
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cbee9a52d6a78a0438ca28853ccad2f4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9c2290140f754d24c84635c4021846cc
+    spriteID: 
     vertices: []
     indices: 
     edges: []
