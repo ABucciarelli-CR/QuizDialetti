@@ -146,7 +146,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SO/LevelCollection.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="96">
@@ -180,23 +180,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/PurchaseManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1216">
-              <caret line="159" column="49" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
+            <state relative-caret-position="736">
+              <caret line="46" column="69" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="76" />
               <folding>
                 <marker date="1553094181371" expanded="true" signature="6:96" ph="..." />
                 <marker date="1553094181371" expanded="true" signature="158:8805" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="479:771" ph="/* public static string kProductIDConsumable =    &quot;consumable&quot;; ... */" />
                 <marker date="1553094181371" expanded="true" signature="872:1046" ph="/* Google Play Store-specific product identifier subscription product. ... */" />
-                <marker date="1553094181371" expanded="false" signature="1072:1109" ph="{...}" />
-                <marker date="1553094181371" expanded="false" signature="1126:1359" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="1072:1109" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="1126:1359" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="1234:1353" ph="{...}" />
-                <marker date="1553094181371" expanded="false" signature="1401:2280" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="1401:2280" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="1494:1571" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="1830:2223" ph="/* builder.AddProduct(kProductIDConsumable, ProductType.Consumable); ... */" />
-                <marker date="1553094181371" expanded="false" signature="2313:2485" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="2313:2485" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="2521:2562" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="2607:4017" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="2692:3740" ph="{...}" />
@@ -207,20 +207,20 @@
                 <marker date="1553094181371" expanded="true" signature="3778:4011" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="3801:3939" ph="/* ... report the fact Purchasing has not succeeded initializing yet. Consider waiting longer or ... */" />
                 <marker date="1553094181371" expanded="true" signature="4022:4253" ph="/* Restore purchases previously made by this customer. Some platforms automatically restore purchases, like Googl ... */" />
-                <marker date="1553094181371" expanded="false" signature="4288:5939" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="4288:5939" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="4377:4603" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="4797:5663" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="5073:5279" ph="/* Begin the asynchronous process of restoring purchases. Expect a confirmation response in ... */" />
                 <marker date="1553094181371" expanded="true" signature="5330:5651" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="5348:5503" ph="/* The first phase of restoration. If no more responses are received on ProcessPurchase then ... */" />
                 <marker date="1553094181371" expanded="true" signature="5701:5933" ph="{...}" />
-                <marker date="1553094181371" expanded="false" signature="5944:5981" ph="/* --- IStoreListener ... */" />
-                <marker date="1553094181371" expanded="false" signature="6071:6474" ph="{...}" />
-                <marker date="1553094181371" expanded="false" signature="6544:6750" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="5944:5981" ph="/* --- IStoreListener ... */" />
+                <marker date="1553094181371" expanded="true" signature="6071:6474" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="6544:6750" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="6827:8357" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="6995:7146" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="7146:8301" ph="/* Or ... a non-consumable product has been purchased by this user. ... */" />
-                <marker date="1553094181371" expanded="false" signature="8449:8803" ph="{...}" />
+                <marker date="1553094181371" expanded="true" signature="8449:8803" ph="{...}" />
                 <marker date="1553094181371" expanded="true" signature="8464:8642" ph="/* A product purchase attempt did not succeed. Check failureReason for more detail. Consider sharing ... */" />
               </folding>
             </state>
@@ -292,7 +292,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="229" />
     <option name="y" value="-13" />
     <option name="width" value="1059" />
@@ -381,12 +381,12 @@
       <workItem from="1552751989133" duration="1401000" />
       <workItem from="1553040164792" duration="1350000" />
       <workItem from="1553078216536" duration="6629000" />
-      <workItem from="1553269950807" duration="2663000" />
+      <workItem from="1553269950807" duration="3154000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48548000" />
+    <option name="totallyTimeSpent" value="49039000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,7 +398,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.05063966" />
@@ -521,51 +521,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PurchaseManager.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1216">
-          <caret line="159" column="49" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
-          <folding>
-            <marker date="1553094181371" expanded="true" signature="6:96" ph="..." />
-            <marker date="1553094181371" expanded="true" signature="158:8805" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="479:771" ph="/* public static string kProductIDConsumable =    &quot;consumable&quot;; ... */" />
-            <marker date="1553094181371" expanded="true" signature="872:1046" ph="/* Google Play Store-specific product identifier subscription product. ... */" />
-            <marker date="1553094181371" expanded="false" signature="1072:1109" ph="{...}" />
-            <marker date="1553094181371" expanded="false" signature="1126:1359" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="1234:1353" ph="{...}" />
-            <marker date="1553094181371" expanded="false" signature="1401:2280" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="1494:1571" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="1830:2223" ph="/* builder.AddProduct(kProductIDConsumable, ProductType.Consumable); ... */" />
-            <marker date="1553094181371" expanded="false" signature="2313:2485" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="2521:2562" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="2607:4017" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="2692:3740" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="2715:2852" ph="/* ... look up the Product reference with the general product identifier and the Purchasing ... */" />
-            <marker date="1553094181371" expanded="true" signature="3117:3459" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="3256:3384" ph="/* ... buy the product. Expect a response either through ProcessPurchase or OnPurchaseFailed ... */" />
-            <marker date="1553094181371" expanded="true" signature="3505:3730" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="3778:4011" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="3801:3939" ph="/* ... report the fact Purchasing has not succeeded initializing yet. Consider waiting longer or ... */" />
-            <marker date="1553094181371" expanded="true" signature="4022:4253" ph="/* Restore purchases previously made by this customer. Some platforms automatically restore purchases, like Googl ... */" />
-            <marker date="1553094181371" expanded="false" signature="4288:5939" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="4377:4603" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="4797:5663" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="5073:5279" ph="/* Begin the asynchronous process of restoring purchases. Expect a confirmation response in ... */" />
-            <marker date="1553094181371" expanded="true" signature="5330:5651" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="5348:5503" ph="/* The first phase of restoration. If no more responses are received on ProcessPurchase then ... */" />
-            <marker date="1553094181371" expanded="true" signature="5701:5933" ph="{...}" />
-            <marker date="1553094181371" expanded="false" signature="5944:5981" ph="/* --- IStoreListener ... */" />
-            <marker date="1553094181371" expanded="false" signature="6071:6474" ph="{...}" />
-            <marker date="1553094181371" expanded="false" signature="6544:6750" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="6827:8357" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="6995:7146" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="7146:8301" ph="/* Or ... a non-consumable product has been purchased by this user. ... */" />
-            <marker date="1553094181371" expanded="false" signature="8449:8803" ph="{...}" />
-            <marker date="1553094181371" expanded="true" signature="8464:8642" ph="/* A product purchase attempt did not succeed. Check failureReason for more detail. Consider sharing ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -634,6 +589,51 @@
           <folding>
             <marker date="1553273899542" expanded="false" signature="6:78" ph="..." />
             <marker date="1553273899542" expanded="true" signature="167:309" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/PurchaseManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="46" column="69" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="76" />
+          <folding>
+            <marker date="1553094181371" expanded="true" signature="6:96" ph="..." />
+            <marker date="1553094181371" expanded="true" signature="158:8805" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="479:771" ph="/* public static string kProductIDConsumable =    &quot;consumable&quot;; ... */" />
+            <marker date="1553094181371" expanded="true" signature="872:1046" ph="/* Google Play Store-specific product identifier subscription product. ... */" />
+            <marker date="1553094181371" expanded="true" signature="1072:1109" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="1126:1359" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="1234:1353" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="1401:2280" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="1494:1571" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="1830:2223" ph="/* builder.AddProduct(kProductIDConsumable, ProductType.Consumable); ... */" />
+            <marker date="1553094181371" expanded="true" signature="2313:2485" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="2521:2562" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="2607:4017" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="2692:3740" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="2715:2852" ph="/* ... look up the Product reference with the general product identifier and the Purchasing ... */" />
+            <marker date="1553094181371" expanded="true" signature="3117:3459" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="3256:3384" ph="/* ... buy the product. Expect a response either through ProcessPurchase or OnPurchaseFailed ... */" />
+            <marker date="1553094181371" expanded="true" signature="3505:3730" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="3778:4011" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="3801:3939" ph="/* ... report the fact Purchasing has not succeeded initializing yet. Consider waiting longer or ... */" />
+            <marker date="1553094181371" expanded="true" signature="4022:4253" ph="/* Restore purchases previously made by this customer. Some platforms automatically restore purchases, like Googl ... */" />
+            <marker date="1553094181371" expanded="true" signature="4288:5939" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="4377:4603" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="4797:5663" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="5073:5279" ph="/* Begin the asynchronous process of restoring purchases. Expect a confirmation response in ... */" />
+            <marker date="1553094181371" expanded="true" signature="5330:5651" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="5348:5503" ph="/* The first phase of restoration. If no more responses are received on ProcessPurchase then ... */" />
+            <marker date="1553094181371" expanded="true" signature="5701:5933" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="5944:5981" ph="/* --- IStoreListener ... */" />
+            <marker date="1553094181371" expanded="true" signature="6071:6474" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="6544:6750" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="6827:8357" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="6995:7146" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="7146:8301" ph="/* Or ... a non-consumable product has been purchased by this user. ... */" />
+            <marker date="1553094181371" expanded="true" signature="8449:8803" ph="{...}" />
+            <marker date="1553094181371" expanded="true" signature="8464:8642" ph="/* A product purchase attempt did not succeed. Check failureReason for more detail. Consider sharing ... */" />
           </folding>
         </state>
       </provider>
