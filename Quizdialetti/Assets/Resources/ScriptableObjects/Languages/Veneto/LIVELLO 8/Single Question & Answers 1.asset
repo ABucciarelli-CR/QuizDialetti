@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers 1
+  m_EditorClassIdentifier: 
+  question: "Come si traduce in italiano il proverbio \u201Cx\xE8 aea matina che se
+    impenia la manina\u201D? "
+  answers:
+  - "\xE8 alla mattina che si prende la mano"
+  - 'chi si alza la mattina lavora '
+  - "\xE8 dalla mattina che si riempie la mano "
+  - "Perch\xE8 la mattina mi si addormenta la mano "
+  rightAnswer: 3

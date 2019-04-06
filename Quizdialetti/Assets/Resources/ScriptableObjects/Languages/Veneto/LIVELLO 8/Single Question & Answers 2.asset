@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers 2
+  m_EditorClassIdentifier: 
+  question: "Come si traduce in italiano il proverbio \u201Cessare indrio come a coa
+    del mas-cio\u201D? "
+  answers:
+  - 'Essere dietro come la coda del maiale '
+  - 'Pensare indietro come la coda del maiale '
+  - 'Sentire freddo come la coda del cane '
+  - 'Andare indietro come la coda del cane '
+  rightAnswer: 1

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers 2
+  m_EditorClassIdentifier: 
+  question: "Come si traduce in italiano il proverbio \u201CCo\u2019 piove e co\u2019
+    scarvassa b\xE0caro pien e voda la piassa\u201D?"
+  answers:
+  - "Quando piove e c\u2019\xE8 la pioggia \xE8 piena la bocca e vuota la pancia"
+  - "Che piove o ci sia la tempesta chi \xE8 al chiuso va in piazza "
+  - 'Che piove o ci sia una bufera bisogna andare via e svuotare la piazza   '
+  - "Quando piove e c\u2019\xE8 la bufera \xE8 piena l\u2019osteria e vuota la piazza "
+  rightAnswer: 4

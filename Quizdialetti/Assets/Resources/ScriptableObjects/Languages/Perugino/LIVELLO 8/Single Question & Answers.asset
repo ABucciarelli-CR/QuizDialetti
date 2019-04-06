@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers
+  m_EditorClassIdentifier: 
+  question: "Come si traduce in italiano il proverbio \u201Ctu la s\xE8 lunga ma \u2018n
+    la s\xE8 \u2018arcont\xE0\u201D? "
+  answers:
+  - tu conosci una storia lunga ma non la sai raccontare
+  - tu sei molto alto ma non abbastanza
+  - 'tu parli tanto e non riesci a stare zitto '
+  - Tu sei molto lungo ma non simpatico
+  rightAnswer: 1

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers 2
+  m_EditorClassIdentifier: 
+  question: "ome si traduce in italiano il proverbio \u201CChi \u2018nce nasce, \u2018n
+    c\xE8 pasce\u201D?"
+  answers:
+  - 'Chi non nasce, non mangia '
+  - "Chi non nasce, non pu\xF2 farcela "
+  - Chi non ci nasce, non ci cresce
+  - Chi nasce, non ci riesce
+  rightAnswer: 3

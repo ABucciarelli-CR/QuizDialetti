@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers 1
+  m_EditorClassIdentifier: 
+  question: "Come si traduce in italiano il proverbio \u201CVa \u2018n piazza e pija
+    n consijo, antorna a casa e ffa come te pare\u201D?"
+  answers:
+  - Vai fuori e prendi qualcosa, rientra a casa senza nulla
+  - 'Vai in piazza e prendi un consiglio, torna a casa e fai come ti pare '
+  - "Vai in piazza e compra qualcosa, torna a casa e facci ci\xF2 che vuoi"
+  - Vai fuori di casa e ascolta un consiglio, torna e dimenticatelo
+  rightAnswer: 2

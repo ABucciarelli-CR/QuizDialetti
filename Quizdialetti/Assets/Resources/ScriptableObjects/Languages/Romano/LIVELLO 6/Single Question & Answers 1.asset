@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
+  m_Name: Single Question & Answers 1
+  m_EditorClassIdentifier: 
+  question: "Come si traduce in italiano il modo di dire \u201CTaja ch\u2019\xE8 rosso\u201D?
+    \ "
+  answers:
+  - "Taglia che c\u2019\xE8 del sangue "
+  - 'Taglia dove indicato '
+  - Attento che taglia
+  - "Taglia che \xE8 maturo"
+  rightAnswer: 4
