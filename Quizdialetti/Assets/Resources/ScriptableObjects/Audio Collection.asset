@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b748f1c1ec95be44a31624855da2f49, type: 3}
   m_Name: Audio Collection
   m_EditorClassIdentifier: 
-  winAudio: {fileID: 8300000, guid: dd16087e8c8aab24188280b9ee3d7d18, type: 3}
-  loseAudio: {fileID: 8300000, guid: 61fb26bec908d0941a9ad7bbe328331c, type: 3}
-  bgAudio: {fileID: 8300000, guid: 3e61c0ef3569dd540be7547fe0fe5f30, type: 3}
+  winAudio: {fileID: 8300000, guid: c41743262d3537d4eb494d7b622fe73f, type: 3}
+  loseAudio: {fileID: 8300000, guid: ff8880983752fef45924f2c7938f8fed, type: 3}
+  bgAudio: {fileID: 8300000, guid: 16ecfcab4f70b0a4cb3656c860efee3e, type: 3}
