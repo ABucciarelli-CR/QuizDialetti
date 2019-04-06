@@ -180,11 +180,11 @@ public class QuestionsManager : MonoBehaviour
     {
         //problema qua
         questionPointer++;
-        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber >= languages.languageLevels[languageNumber].questionCollection.Count-1)
+        if (!CheckQuestionEndTwo())
         {
             OpenLevels();
         }
-        else if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber < languages.languageLevels[languageNumber].questionCollection.Count)
+        else if (!CheckQuestionEnd())
         {
             gameObject.GetComponent<AdsManager>().StartSkippableAds();
             languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
@@ -205,11 +205,29 @@ public class QuestionsManager : MonoBehaviour
         
         if (languages.languageLevels[languageNumber].questionCollection[questionNumber].questions[questionPointer].rightAnswer == ans+1)
         {
-            audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.winAudio;
-            audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
-            results.transform.GetChild(0).gameObject.SetActive(true);
-            results.transform.GetChild(1).gameObject.SetActive(false);
-            StartCoroutine(WaitToNextQuestion(true));
+            //check if the level was ended
+            questionPointer++;
+            if (!CheckQuestionEnd()) 
+            {
+                //livello finito
+                audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.winAudio;
+                audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
+                results.transform.GetChild(0).gameObject.SetActive(false);
+                results.transform.GetChild(1).gameObject.SetActive(false);
+                results.transform.GetChild(2).gameObject.SetActive(true);
+                StartCoroutine(WaitToNextQuestion(true));
+            }
+            else
+            {
+                //livello non finito
+                audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().clip = audioCollection.winAudio;
+                audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
+                results.transform.GetChild(0).gameObject.SetActive(true);
+                results.transform.GetChild(1).gameObject.SetActive(false);
+                results.transform.GetChild(2).gameObject.SetActive(false);
+                StartCoroutine(WaitToNextQuestion(true));
+            }
+            questionPointer--;
         }
         else
         {    
@@ -217,6 +235,7 @@ public class QuestionsManager : MonoBehaviour
             audioManager.transform.GetChild(1).gameObject.GetComponent<AudioSource>().Play();
             results.transform.GetChild(0).gameObject.SetActive(false);
             results.transform.GetChild(1).gameObject.SetActive(true);
+            results.transform.GetChild(2).gameObject.SetActive(false);
             StartCoroutine(WaitToNextQuestion(false));
         }
     }
@@ -233,22 +252,50 @@ public class QuestionsManager : MonoBehaviour
         }
     }
 
+    public bool CheckQuestionEndTwo() 
+    {
+        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber >= languages.languageLevels[languageNumber].questionCollection.Count-1) 
+        {
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+    
+    public bool CheckQuestionEnd() 
+    {
+        if (questionPointer >= languages.languageLevels[languageNumber].questionCollection[questionNumber].questions.Count && questionNumber < languages.languageLevels[languageNumber].questionCollection.Count) 
+        {
+            return false;
+        }
+        else 
+        {
+            return true;
+        }
+    }
+/*
+    public bool CheckIfQuestionsEnded() 
+    {
+        if (questionNumber+1 <= languages.languageLevels[languageNumber].questionCollection.Count) 
+        {
+            Debug.Log("bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb");
+            return false;
+        }
+        else 
+        {
+            Debug.Log("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+            return true;
+        }
+    }*/
+
     IEnumerator WaitToNextQuestion(bool success)
     {
         yield return new WaitForSeconds(3);
         if (success)
         {
-            //controllo se hai finito le domande, nel caso vai alla selezione della lingua
-            if (questionNumber+1 <= languages.languageLevels[languageNumber].questionCollection.Count)
-            {
-                NextQuestion();
-            }
-            else 
-            {
-                OpenSublevels(languageNumber);
-            }
-            
-            
+            NextQuestion();
         }
         else
         {
@@ -256,6 +303,7 @@ public class QuestionsManager : MonoBehaviour
         }
         results.transform.GetChild(0).gameObject.SetActive(false);
         results.transform.GetChild(1).gameObject.SetActive(false);
+        results.transform.GetChild(2).gameObject.SetActive(false);
         results.SetActive(false);
     }
 
