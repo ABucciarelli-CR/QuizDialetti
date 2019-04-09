@@ -182,13 +182,14 @@ public class QuestionsManager : MonoBehaviour
         questionPointer++;
         if (!CheckQuestionEndTwo())
         {
-            OpenLevels();
+            gameObject.GetComponent<AdsManager>().StartSkippableAds();
+            StartCoroutine(WaitToOpen(0));
         }
         else if (!CheckQuestionEnd())
         {
             gameObject.GetComponent<AdsManager>().StartSkippableAds();
             languages.languageLevels[languageNumber].unlocked[questionNumber+1] = true;
-            OpenSublevels(languageNumber);
+            StartCoroutine(WaitToOpen(1));
         }
         else
         {
@@ -290,6 +291,29 @@ public class QuestionsManager : MonoBehaviour
         }
     }*/
 
+    IEnumerator WaitToOpen(int whatToOpen)
+    {
+        int x = 1;
+        if (!gameObject.GetComponent<AdsManager>().AdsActive)
+        {
+            x = 0;
+        }
+        yield return new WaitForSeconds(x);
+        switch (whatToOpen)
+        {
+                case 0:
+                    OpenLevels();
+                    break;
+                
+                case 1:
+                    OpenSublevels(languageNumber);
+                    break;
+                
+                default:
+                    break;
+        }
+    }
+    
     IEnumerator WaitToNextQuestion(bool success)
     {
         yield return new WaitForSeconds(3);
