@@ -96,6 +96,7 @@ public class QuestionsManager : MonoBehaviour
 
     public void OpenArchievements()
     {
+        backGround.GetComponent<Image>().sprite = bgCollection.archievement;
         home.SetActive(false);
         archievement.SetActive(true);
 

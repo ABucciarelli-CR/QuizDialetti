@@ -8,5 +8,6 @@ public class BackGroundCollection : ScriptableObject
 {
     public Sprite home;
     public Sprite languageSelection;
+    public Sprite archievement;
     //public Sprite results;
 }
