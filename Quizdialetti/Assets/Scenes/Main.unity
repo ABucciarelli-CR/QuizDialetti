@@ -815,6 +815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5bd3566d8bd6a5459f2e959c7d2442e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  archievementLocked: {r: 1, g: 1, b: 1, a: 1}
+  archievementUnlocked: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
   languages: {fileID: 11400000, guid: c4a48b16ea413064d8479d3625212a81, type: 2}
   bgCollection: {fileID: 11400000, guid: 40a7e709e6d9e6d4ab079112b81dfd2c, type: 2}
   audioCollection: {fileID: 11400000, guid: e92c135dff29f8e42b1e73213148917a, type: 2}
@@ -3045,7 +3047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.11764706, g: 0.11764706, b: 0.11764706, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class QuestionsManager : MonoBehaviour
+public class QuestionsManager : MonoBehaviour 
 {
 
+    public Color archievementLocked;
+    public Color archievementUnlocked;
     public LanguageCollection languages;
     public BackGroundCollection bgCollection;
     public AudioCollection audioCollection;
