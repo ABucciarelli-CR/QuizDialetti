@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: f46f59588071fd7489277f7fc7b0a9c7
+guid: 6cd53eef7c8d7f044883b49dda9b7df9
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Bottone dialetto veneto_0
+    21300002: Bottone dialetto veneto_1
+    21300004: Bottone dialetto veneto_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +96,71 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bottone dialetto veneto_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 3128
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9f7252e60fdcfe49b9938db4f4ec69e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottone dialetto veneto_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 3128
+        height: 990
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613d5ccbeea54a44d9d7422c84614cdd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottone dialetto veneto_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3128
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06418a766c052294d8fd384057d6eec9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d24477fec1779ac40adbe29a47eb9d56
     vertices: []
     indices: 
     edges: []

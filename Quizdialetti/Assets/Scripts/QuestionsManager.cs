@@ -121,9 +121,9 @@ public class QuestionsManager : MonoBehaviour
     //LevelSelection
     public void OpenSublevels(int x)
     {
+        languageNumber = x;
         backGround.GetComponent<Image>().sprite = languages.languageLevels[languageNumber].questionBG;
         questionPointer = 0;
-        languageNumber = x;
         levels.SetActive(false);
         subLevels.SetActive(true);
         
@@ -178,7 +178,6 @@ public class QuestionsManager : MonoBehaviour
     
     private void NextQuestion()
     {
-        //problema qua
         questionPointer++;
         if (!CheckQuestionEndTwo())
         {

@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: f46f59588071fd7489277f7fc7b0a9c7
+guid: ca7075e29a7adc54992f6d19d679b903
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Bottone dialetto siciliano_0
+    21300002: Bottone dialetto siciliano_1
+    21300004: Bottone dialetto siciliano_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +96,71 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Bottone dialetto siciliano_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 3128
+        height: 640
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68efb4ce5a9d40c448fefe34e5e4b520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottone dialetto siciliano_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 443
+        width: 3128
+        height: 990
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc3df7607cdc5294cacf3656ee322900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bottone dialetto siciliano_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3128
+        height: 990
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30ada45a6febe0149a745183e17966c3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: a5e67800f87791940a5de9a4b9cec191
     vertices: []
     indices: 
     edges: []
