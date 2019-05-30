@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
   m_Name: Single Question & Answers 2
   m_EditorClassIdentifier: 
-  question: "ome si traduce in italiano il proverbio \u201CChi \u2018nce nasce, \u2018n
+  question: "Come si traduce in italiano il proverbio \u201CChi \u2018nce nasce, \u2018n
     c\xE8 pasce\u201D?"
   answers:
   - 'Chi non nasce, non mangia '

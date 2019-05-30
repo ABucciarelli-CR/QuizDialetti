@@ -14,8 +14,8 @@ MonoBehaviour:
   question: "Come si traduce in italiano il proverbio \u201Ctu la s\xE8 lunga ma \u2018n
     la s\xE8 \u2018arcont\xE0\u201D? "
   answers:
-  - tu conosci una storia lunga ma non la sai raccontare
-  - tu sei molto alto ma non abbastanza
-  - 'tu parli tanto e non riesci a stare zitto '
+  - Tu conosci una storia lunga ma non la sai raccontare
+  - Tu sei molto alto ma non abbastanza
+  - Tu parli tanto e non riesci a stare zitto
   - Tu sei molto lungo ma non simpatico
   rightAnswer: 1

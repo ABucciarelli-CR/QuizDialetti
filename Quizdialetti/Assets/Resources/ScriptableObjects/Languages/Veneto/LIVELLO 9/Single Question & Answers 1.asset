@@ -14,8 +14,8 @@ MonoBehaviour:
   question: "Come si traduce in italiano il proverbio \u201CXe el soco vecio che tien
     xo el fogo\u201D? "
   answers:
-  - "E\u2019 il primo legno che fa la brace "
-  - "E\u2019 l\u2019ultimo legno che fa la brace "
-  - "E\u2019 il ceppo che fa accendere il fuoco"
-  - "E\u2019 il ceppo vecchio che fa la brace "
+  - "\xC9 il primo legno che fa la brace "
+  - "\xC9 l\u2019ultimo legno che fa la brace "
+  - "\xC9 il ceppo che fa accendere il fuoco"
+  - "\xC9 il ceppo vecchio che fa la brace "
   rightAnswer: 4

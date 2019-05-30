@@ -14,8 +14,8 @@ MonoBehaviour:
   question: "Come si traduce in italiano il proverbio \u201Cx\xE8 aea matina che se
     impenia la manina\u201D? "
   answers:
-  - "\xE8 alla mattina che si prende la mano"
-  - 'chi si alza la mattina lavora '
-  - "\xE8 dalla mattina che si riempie la mano "
+  - "\xC9 alla mattina che si prende la mano"
+  - 'Chi si alza la mattina lavora '
+  - "\xC9 dalla mattina che si riempie la mano "
   - "Perch\xE8 la mattina mi si addormenta la mano "
   rightAnswer: 3
