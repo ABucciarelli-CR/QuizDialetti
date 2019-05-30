@@ -11,6 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
   m_Name: FioLv5_03
   m_EditorClassIdentifier: 
-  question: 
-  answers: []
-  rightAnswer: 0
+  question: "Come si traduce in italiano il modo di dire \u201Cda\u2019 di barta\u201D?"
+  answers:
+  - Perdere una scommessa
+  - Perdere una barca
+  - Perdere una busta
+  - Perdere la testa
+  rightAnswer: 4

@@ -9,12 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
-  m_Name: FioLv5_02
+  m_Name: FioLv8_02
   m_EditorClassIdentifier: 
-  question: "Come si traduce in italiano il modo di dire \u201Ccome bere un\u2019ovo\u201D?"
+  question: "Come si traduce in italiano il proverbio \u201Csenza lilleri \u2018un
+    si lallera\u201D?"
   answers:
-  - Difficile
-  - Scontato
-  - Impossibile
-  - Facile
-  rightAnswer: 4
+  - Senza soldi non ci si diverte
+  - Senza soldi non si parte
+  - Senza divertimento non ci sono soldi
+  - Senza amici non ci si diverte
+  rightAnswer: 1

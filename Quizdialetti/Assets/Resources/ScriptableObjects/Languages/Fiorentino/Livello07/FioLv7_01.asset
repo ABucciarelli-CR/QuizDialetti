@@ -9,12 +9,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
-  m_Name: FioLv5_02
+  m_Name: FioLv7_01
   m_EditorClassIdentifier: 
-  question: "Come si traduce in italiano il modo di dire \u201Ccome bere un\u2019ovo\u201D?"
+  question: "Come si traduce in italiano il proverbio \u201Cchi \u2018unn ha cervello
+    abbia gambe\u201D?"
   answers:
-  - Difficile
-  - Scontato
-  - Impossibile
-  - Facile
-  rightAnswer: 4
+  - Chi non ha cervello abbia gambe
+  - Chi ha cervello prepari le gambe
+  - Chi non ha cervello non ha le gambe
+  - Chi ha gambe non ha cervello
+  rightAnswer: 1
