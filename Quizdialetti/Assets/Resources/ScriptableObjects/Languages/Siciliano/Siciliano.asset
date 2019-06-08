@@ -22,5 +22,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 31409efebd68ef04780efead5c365557, type: 2}
   - {fileID: 11400000, guid: 170a269e5702e4f4691374981346d907, type: 2}
   unlocked: 010000000000000000
-  questionBG: {fileID: 21300000, guid: 94f4a4fb57455c74885a082b3127caee, type: 3}
+  questionBG: {fileID: 21300000, guid: 47c3850896185e84487eabb9579a796f, type: 3}
   buttonSprite: {fileID: 21300002, guid: ca7075e29a7adc54992f6d19d679b903, type: 3}
