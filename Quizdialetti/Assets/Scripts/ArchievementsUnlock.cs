@@ -7,5 +7,4 @@ public class ArchievementsUnlock : MonoBehaviour
 
     public GameObject napoletano;
     public GameObject romano;
-    
 }

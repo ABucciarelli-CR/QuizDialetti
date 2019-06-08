@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2cbf267-502b-412f-a13b-ab41c6646151" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuestionsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuestionsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Quizdialetti/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Quizdialetti/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/UnityPurchasing/Bin/Facebook/live/FacebookStore.dll.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/UnityPurchasing/Bin/Facebook/live/FacebookStore.dll.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,37 +50,39 @@
     <session id="-1063545443">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="10" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.43" value="1" />
           <entry key="project.open.time.44" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
+          <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.53" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="10" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="4" />
+          <entry key="cs" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="4" />
+          <entry key="C#" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="1951" />
+          <entry key="cs" value="2021" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="1951" />
+          <entry key="C#" value="2021" />
         </counts>
       </usages-collector>
     </session>
@@ -107,7 +111,7 @@
                 <marker date="1555169842793" expanded="true" signature="2434:2520" ph="{...}" />
                 <marker date="1555169842793" expanded="true" signature="2577:2690" ph="{...}" />
                 <marker date="1555169842793" expanded="true" signature="2733:2892" ph="{...}" />
-                <marker date="1555169842793" expanded="false" signature="2947:3445" ph="{...}" />
+                <marker date="1555169842793" expanded="true" signature="2947:3445" ph="{...}" />
                 <marker date="1555169842793" expanded="true" signature="3201:3439" ph="{...}" />
                 <marker date="1555169842793" expanded="true" signature="3508:4858" ph="{...}" />
                 <marker date="1555169842793" expanded="true" signature="3841:4852" ph="{...}" />
@@ -150,8 +154,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+            <state relative-caret-position="120">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -257,12 +261,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Purchaser.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AdsManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PurchaseManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/LevelCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs" />
         <option value="$PROJECT_DIR$/Assets/Plugins/UDP/Editor/Analytics/Common.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SO/BackGroundCollection.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/QuestionsManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scenes/Movement.cs" />
       </list>
     </option>
   </component>
@@ -284,10 +289,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -365,11 +370,13 @@
       <workItem from="1554561285864" duration="4052000" />
       <workItem from="1554715694509" duration="1823000" />
       <workItem from="1555165910627" duration="2203000" />
+      <workItem from="1559999450111" duration="424000" />
+      <workItem from="1560002623152" duration="642000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58438000" />
+    <option name="totallyTimeSpent" value="59504000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -464,8 +471,8 @@
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SO/AudioCollection.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/ArchievementsUnlock.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
+        <state relative-caret-position="120">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -490,20 +497,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="30" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Plugins/UDP/Editor/Analytics/Common.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Purchaser.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -519,6 +512,27 @@
             <marker date="1555166779136" expanded="false" signature="6:100" ph="..." />
             <marker date="1555166779136" expanded="true" signature="243:369" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Plugins/UDP/Editor/Analytics/Common.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scenes/Movement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="5" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -543,7 +557,7 @@
             <marker date="1555169842793" expanded="true" signature="2434:2520" ph="{...}" />
             <marker date="1555169842793" expanded="true" signature="2577:2690" ph="{...}" />
             <marker date="1555169842793" expanded="true" signature="2733:2892" ph="{...}" />
-            <marker date="1555169842793" expanded="false" signature="2947:3445" ph="{...}" />
+            <marker date="1555169842793" expanded="true" signature="2947:3445" ph="{...}" />
             <marker date="1555169842793" expanded="true" signature="3201:3439" ph="{...}" />
             <marker date="1555169842793" expanded="true" signature="3508:4858" ph="{...}" />
             <marker date="1555169842793" expanded="true" signature="3841:4852" ph="{...}" />

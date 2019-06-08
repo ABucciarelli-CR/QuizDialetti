@@ -11,11 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
   m_Name: FioLv9_01
   m_EditorClassIdentifier: 
-  question: "Come si traduce in italiano il proverbio \u201Cse tu fossi alto tu s\xE8
-    bischero tu berresti alle grondaie\u201D?"
+  question: "Come si traduce in italiano il proverbio \u201Cse tu fossi alto quante
+    tu s\xE8 bischero tu berresti alle grondaie\u201D?"
   answers:
   - Se fossi alto e sciocco berresti dalle grondaie
   - Se tu non fossi alto ma sciocco berresti dalle grondaie
-  - Se tu fossi alto in base a quanto sei sciocco, berresti dall grondaie
+  - Se tu fossi alto in base a quanto sei sciocco, berresti dalle grondaie
   - Se tu fossi sciocco ma non alto berresti dalle grondaie
   rightAnswer: 3
