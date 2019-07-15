@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
   m_Name: FioLv1_03
   m_EditorClassIdentifier: 
-  question: "ome si traduce il termine \u201Cnaso\u201D?"
+  question: "Come si traduce il termine \u201Cnaso\u201D?"
   answers:
   - Gota
   - Nappa

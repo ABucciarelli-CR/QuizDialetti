@@ -16,7 +16,6 @@ MonoBehaviour:
   answers:
   - Abbiamo contato fino a trenta, contiamo fino a trentuno
   - 'Hanno fatto trenta cose, noi ne faremo trentuno '
-  - 'Siamo arrivati a trenta, arriveremo a trentuno Siamo in trenta, ora siamo in
-    trentuno '
+  - Siamo arrivati a trenta, arriveremo a trentuno
   - 'Siamo in trenta, ora siamo in trentuno '
   rightAnswer: 1

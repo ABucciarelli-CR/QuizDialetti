@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
   m_Name: Single Question & Answers
   m_EditorClassIdentifier: 
-  question: " Come si traduce in italiano il proverbio \u201CSaso trato e paroea dita
+  question: "Come si traduce in italiano il proverbio \u201CSaso trato e paroea dita
     no torna indrio\u201D? "
   answers:
   - 'Sasso tratto e poche dita non tornano indietro '

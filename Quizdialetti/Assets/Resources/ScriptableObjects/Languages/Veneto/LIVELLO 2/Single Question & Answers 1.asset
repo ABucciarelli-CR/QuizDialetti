@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db186c173f1d4aa4594522feb1e4f0e9, type: 3}
   m_Name: Single Question & Answers 1
   m_EditorClassIdentifier: 
-  question: "come viene tradotto l\u2019animale \u201Ctopo\u201D?"
+  question: "Come viene tradotto l\u2019animale \u201Ctopo\u201D?"
   answers:
   - "Cun\xE8l"
   - "S\xF3r\xE7"

@@ -14,8 +14,8 @@ MonoBehaviour:
   question: "Come si traduce letteralmente in italiano il modo di dire \u201CNun tengo
     genio\u201D?"
   answers:
-  - Non ho il genio
+  - Non ho voglia
   - Non trovo il genio
   - Dove si trova il genio
-  - Ho perso il genio
+  - Ho perso la voglia
   rightAnswer: 1
