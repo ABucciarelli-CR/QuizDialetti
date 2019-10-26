@@ -1,7 +1,8 @@
 fileFormatVersion: 2
-guid: c759f09719c2a464c9c07dc3016ea1a0
+guid: f3c3fa0d0dbc9f548967aa35aa449c9f
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: logo 2_0
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +41,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -93,11 +94,31 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: logo 2_0
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 449
+        width: 871
+        height: 232
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b13a75f8b7e5e438224e6f4fc9a14f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: aa0dc58dfd2d23f46929fed4e27f84e2
+    spriteID: da20263a0e7accc419ac044614244f8e
     vertices: []
     indices: 
     edges: []

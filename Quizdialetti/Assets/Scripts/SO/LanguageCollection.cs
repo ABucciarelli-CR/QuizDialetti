@@ -6,5 +6,5 @@ using UnityEngine;
 public class LanguageCollection : ScriptableObject 
 {
 	public List<LevelCollection> languageLevels;
-	
+	public List<bool> levelsCompleted;
 }

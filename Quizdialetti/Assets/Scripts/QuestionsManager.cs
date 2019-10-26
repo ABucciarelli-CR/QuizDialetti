@@ -100,6 +100,7 @@ public class QuestionsManager : MonoBehaviour
     {
         backGround.GetComponent<Image>().sprite = bgCollection.archievement;
         home.SetActive(false);
+        RecolorArchievements();
         archievement.SetActive(true);
 
     }
@@ -185,6 +186,7 @@ public class QuestionsManager : MonoBehaviour
         if (!CheckQuestionEndTwo())
         {
             gameObject.GetComponent<AdsManager>().StartSkippableAds();
+            UnlockArchievement();
             StartCoroutine(WaitToOpen(0));
         }
         else if (!CheckQuestionEnd())
@@ -292,6 +294,33 @@ public class QuestionsManager : MonoBehaviour
             return true;
         }
     }*/
+
+    public void UnlockArchievement()
+    {
+        
+        /*
+        if (!languages.languageLevels[languageNumber].archievementUnlocked)
+        {
+            languages.languageLevels[languageNumber].archievementUnlocked = true;
+            archievement.GetComponent<ArchievementsUnlock>().languages[languageNumber].GetComponent<Image>().color = archievement.GetComponent<ArchievementsUnlock>().unlocked;
+        }
+        */
+    }
+
+    public void RecolorArchievements()
+    {
+        for (int i=0; i<languages.languageLevels.Count; i++)
+        {
+            if (languages.languageLevels[i].archievementUnlocked)
+            {
+                archievement.GetComponent<ArchievementsUnlock>().languages[i].GetComponent<Image>().color = archievementUnlocked;
+            }
+            else
+            {
+                archievement.GetComponent<ArchievementsUnlock>().languages[i].GetComponent<Image>().color = archievementLocked;
+            }
+        }
+    }
 
     IEnumerator WaitToOpen(int whatToOpen)
     {

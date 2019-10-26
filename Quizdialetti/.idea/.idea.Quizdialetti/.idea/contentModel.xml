@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Alessio Bucciarelli\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Alessio Bucciarelli\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_Quizdialetti.260976427.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Alessio Bucciarelli\Documents\QuizDialetti\QuizDialetti" t="IncludeRecursive">
+    <e p="C:\Users\Capo\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Capo\.Rider2019.1\system\resharper-host\Local\Transient\ReSharperHost\v191\SolutionCaches\_Quizdialetti.-1238609674.00" t="ExcludeRecursive" />
+    <e p="D:\Github\QuizDialetti\QuizDialetti" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Fonts" t="Include">
+          <e p="Ubuntu" t="Include">
+            <e p="UFL.txt" t="Include" />
+          </e>
+        </e>
         <e p="Plugins" t="Include">
           <e p="UDP" t="Include">
             <e p="Editor" t="Include">
@@ -74,13 +79,10 @@
           </e>
         </e>
       </e>
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
       <e p="Quizdialetti.sln" t="IncludeFlat" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>
