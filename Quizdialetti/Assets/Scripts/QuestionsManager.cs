@@ -298,13 +298,13 @@ public class QuestionsManager : MonoBehaviour
     public void UnlockArchievement()
     {
         
-        /*
+        
         if (!languages.languageLevels[languageNumber].archievementUnlocked)
         {
             languages.languageLevels[languageNumber].archievementUnlocked = true;
-            archievement.GetComponent<ArchievementsUnlock>().languages[languageNumber].GetComponent<Image>().color = archievement.GetComponent<ArchievementsUnlock>().unlocked;
+            //archievement.GetComponent<ArchievementsUnlock>().languages[languageNumber].GetComponent<Image>().color = archievement.GetComponent<ArchievementsUnlock>().unlocked;
         }
-        */
+        
     }
 
     public void RecolorArchievements()

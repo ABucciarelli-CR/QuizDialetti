@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ad3e417c39ae246a6725531440f9ca, type: 3}
   m_Name: Perugino
   m_EditorClassIdentifier: 
+  archievementUnlocked: 0
   questionCollection:
   - {fileID: 11400000, guid: 0d8b7f895d6ba724f95464ed364e5d2e, type: 2}
   - {fileID: 11400000, guid: cd356571844225842bc3b652047d4d1d, type: 2}

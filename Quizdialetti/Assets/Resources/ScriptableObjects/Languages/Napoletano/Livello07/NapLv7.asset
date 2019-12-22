@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Name: NapLv7
   m_EditorClassIdentifier: 
   questions:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 11400000, guid: adb499dc7280a344ca304df79678ff34, type: 2}
+  - {fileID: 11400000, guid: 66536b21d404a64468699f1c294c54ae, type: 2}
+  - {fileID: 11400000, guid: a2a2302d692709b42825a6b142a9a6b0, type: 2}

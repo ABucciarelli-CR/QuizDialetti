@@ -11,6 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82ad3e417c39ae246a6725531440f9ca, type: 3}
   m_Name: Fiorentino
   m_EditorClassIdentifier: 
+  archievementUnlocked: 0
   questionCollection:
   - {fileID: 11400000, guid: 80d318692b81ac44c9a7a78ece984f30, type: 2}
   - {fileID: 11400000, guid: 3eb83d95ff7ce8a4884e2b3fc8f782eb, type: 2}
@@ -21,6 +22,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a6c1b073f1b996247915f74181c8d2f4, type: 2}
   - {fileID: 11400000, guid: 67a31f6be5b6f584db2c87a0a7ff16f8, type: 2}
   - {fileID: 11400000, guid: 5b82c2a81e18fd8419e3ce82875ce60f, type: 2}
-  unlocked: 010101010101010101
+  unlocked: 010000000000000000
   questionBG: {fileID: 21300000, guid: 75d64ef11285ce84398222f2006823d0, type: 3}
   buttonSprite: {fileID: 21300002, guid: 5f54bd9ae6f897247bb18f15e47cdbe8, type: 3}

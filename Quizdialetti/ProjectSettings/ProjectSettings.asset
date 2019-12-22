@@ -22,7 +22,7 @@ PlayerSettings:
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 2
   m_SplashScreenLogoStyle: 1
-  m_SplashScreenDrawMode: 1
+  m_SplashScreenDrawMode: 0
   m_SplashScreenBackgroundAnimationZoom: 0
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
@@ -40,11 +40,9 @@ PlayerSettings:
     width: 1
     height: 1
   m_SplashScreenLogos:
-  - logo: {fileID: 10404, guid: 0000000000000000e000000000000000, type: 0}
-    duration: 2
-  - logo: {fileID: 21300000, guid: 4584bbe0fd637714982e1556e43fc13f, type: 3}
-    duration: 2
-  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: adc0df7ec7701784494d7c94e13d8831,
+  - logo: {fileID: 21300000, guid: f3c3fa0d0dbc9f548967aa35aa449c9f, type: 3}
+    duration: 4
+  m_VirtualRealitySplashScreen: {fileID: 2800000, guid: f3c3fa0d0dbc9f548967aa35aa449c9f,
     type: 3}
   m_HolographicTrackingLossScreen: {fileID: 0}
   defaultScreenWidth: 1024
@@ -248,7 +246,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/Alessio/Documents/QuizDialetti/Quizdialetti/user.keystore
+  AndroidKeystoreName: D:/Github/QuizDialetti/Quizdialetti/user.keystore
   AndroidKeyaliasName: quiz_dialetti
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
@@ -267,7 +265,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: adc0df7ec7701784494d7c94e13d8831, type: 3}
+      m_Icon: {fileID: 2800000, guid: 209afd46422f24940b82b96a1d3779fd, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0
